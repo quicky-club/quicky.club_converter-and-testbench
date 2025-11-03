@@ -12,7 +12,7 @@ $ URL="http://intercity-vpn.de/files/2025-10-04/upload/precision-machinery-shape
 $ INPUT=~/precision-machinery-shapes-golden-substance-with-robotic-exactitude.png
 $ curl -so "$INPUT" "$URL"
 
-# needs ~
+# run script:
 $ convert.sh "$INPUT" all --parallel 30
 ...
 [OK] ready in 313 seconds for 274 conversions
