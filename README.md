@@ -1,3 +1,7 @@
+### Link
+
+![thisrepo.qrcode](https://show.quicky.club/url/url1.svg)
+
 ### What
 
 convert any image into all formats (e.g. jpeg-xl, heif, avif, jpeg, png, webp, ...) and many different quality settings for reducing filesize.
