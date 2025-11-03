@@ -4,21 +4,24 @@ convert any image into all formats (e.g. jpeg-xl, heif, avif, jpeg, png, webp, .
 
 ### Usage
 
-  # testimage:
-  # originally from https://jpegxl.info/images/precision-machinery-shapes-golden-substance-with-robotic-exactitude.jpg
-  $ URL="http://intercity-vpn.de/files/2025-10-04/upload/precision-machinery-shapes-golden-substance-with-robotic-exactitude.png"
-  $ INPUT=~/precision-machinery-shapes-golden-substance-with-robotic-exactitude.png
-  $ curl -so "$INPUT" "$URL"
+```
+# prepare a testimage, e.g.:
+# originally from https://jpegxl.info/images/precision-machinery-shapes-golden-substance-with-robotic-exactitude.jpg
 
-  # needs ~
-  $ convert.sh "$INPUT" all --parallel 30
-  ...
-  [OK] ready in 313 seconds for 274 conversions
-       see directory: /tmp/tmp.6cQyTVxqpc-converted
+$ URL="http://intercity-vpn.de/files/2025-10-04/upload/precision-machinery-shapes-golden-substance-with-robotic-exactitude.png"
+$ INPUT=~/precision-machinery-shapes-golden-substance-with-robotic-exactitude.png
+$ curl -so "$INPUT" "$URL"
 
-       see stats: /tmp/tmp.6cQyTVxqpc-converted/stats.txt
-             and: /tmp/tmp.6cQyTVxqpc-converted/stats-system.txt
-             and: /tmp/tmp.6cQyTVxqpc-converted/plot.svg
+# needs ~
+$ convert.sh "$INPUT" all --parallel 30
+...
+[OK] ready in 313 seconds for 274 conversions
+     see directory: /tmp/tmp.6cQyTVxqpc-converted
+
+     see stats: /tmp/tmp.6cQyTVxqpc-converted/stats.txt
+           and: /tmp/tmp.6cQyTVxqpc-converted/stats-system.txt
+           and: /tmp/tmp.6cQyTVxqpc-converted/plot.svg
+```
 
 ### ToDo
 * dockerimage
