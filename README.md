@@ -61,6 +61,9 @@ FILE=/path/to/an/image
 cat $FILE | curl -sH "$AUTH" -F "data=@-" -F "width=123" $URL
 ```
 
+see: https://show.quicky.club/results/1234/image-hcoTgAmLF3RK-560px.html
+
+
 ### ToDo
 * dockerimage
 * binary download
