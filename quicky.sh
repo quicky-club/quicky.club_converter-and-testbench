@@ -1,5 +1,9 @@
 #!/bin/sh
 # shellcheck shell=dash
+#
+# TODO: https://chromium.googlesource.com/codecs/libwebp2/
+# TODO: https://bellard.org/bpg/
+
 
 FILE_INPUT="$1"
 MYSETTINGS="$2"	# e.g. avif-all-avifenc-q45 or 'all'
