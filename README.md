@@ -50,6 +50,17 @@ family: webp encoder: cwebp    settings: webp-all-cwebp-q16   filesize:   25126 
 family: webp encoder: cwebp    settings: webp-all-cwebp-q17   filesize:   25438 bytes in   440 ms butteraugli: 11.61 in 52570 ms butteraujxl:  8.39 in  2860 ms ssimulacra2: 48.80 in  1110 ms fssimu2: 47.46 in   210 ms
 ```
 
+### API
+
+```
+URL='https://show.quicky.club/api/v1/img'
+APIKEY='maschinenraum'
+AUTH="Authorization: Bearer $APIKEY"
+
+FILE=/path/to/an/image
+cat $FILE | curl -sH "$AUTH" -F "data=@-" -F "width=123" $URL
+```
+
 ### ToDo
 * dockerimage
 * binary download
